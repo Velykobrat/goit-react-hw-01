@@ -1,34 +1,36 @@
-
+import styles from './Profile.module.css'; // імпортуємо файли стилів
 
 const Profile = ({ name, tag, location, image, stats }) => {
   const { followers, views, likes } = stats;
 
   return (
-    <div>
+    <div className={styles['profile-container']}>
       <div>
         <img
           src={image}
           alt="User avatar"
+          className={styles.avatar} // додаємо клас для аватара
         />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+        <p className={styles.name}>{name}</p>
+        <p className={styles.tag}>@{tag}</p>
+        <p className={styles.location}>{location}</p>
       </div>
 
-      <ul>
-        <li>
-          <span>Followers</span>
-          <span>{followers}</span>
-        </li>
-        <li>
-          <span>Views</span>
-          <span>{views}</span>
-        </li>
-        <li>
-          <span>Likes</span>
-          <span>{likes}</span>
-        </li>
-      </ul>
+<div className={styles.stats}>
+  <div className={styles.stat}>
+    <span className={styles['stat-name']}>Followers</span>
+    <span className={styles['stat-value']}>{followers}</span>
+  </div>
+  <div className={styles.stat}>
+    <span className={styles['stat-name']}>Views</span>
+    <span className={styles['stat-value']}>{views}</span>
+  </div>
+  <div className={styles.stat}>
+    <span className={styles['stat-name']}>Likes</span>
+    <span className={styles['stat-value']}>{likes}</span>
+  </div>
+</div>
+
     </div>
   );
 };

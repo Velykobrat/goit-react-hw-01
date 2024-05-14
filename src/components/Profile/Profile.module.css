@@ -5,12 +5,57 @@
     background-color: white;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 20px;
 }
 
 .avatar {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-bottom: 20px;
+}
+
+.name {
+    font-weight: bold;
+    color: black;
+    margin: auto;
+    /* Додано вирівнювання по горизонталі */
+}
+
+.tag,
+.location {
+    color: gray;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 10px;
+    gap: 25px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stat-name {
+    color: black;
+    /* Колір шрифту для назв */
+}
+
+.stat-value {
+    font-weight: bold;
+    /* Зробили значення жирним */
+    color: black;
+    /* Колір шрифту для значень */
+}
+
+.name {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat span:last-child {
+    font-weight: bold;
 }
