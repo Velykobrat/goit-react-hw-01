@@ -1,6 +1,5 @@
 // FriendListItem.jsx
 
-
 import PropTypes from 'prop-types';
 import styles from './FriendListItem.module.css';
 

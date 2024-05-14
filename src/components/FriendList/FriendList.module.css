@@ -1,0 +1,14 @@
+.friendListContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
