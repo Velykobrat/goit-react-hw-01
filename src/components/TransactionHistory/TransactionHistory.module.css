@@ -1,0 +1,19 @@
+.transactionTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.transactionTable th,
+.transactionTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+
+}
+
+.transactionTable th {
+    background-color: #f0f0f0;
+    color: black;
+    font-weight: bold;
+    width: 140px;
+}
